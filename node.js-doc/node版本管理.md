@@ -7,6 +7,7 @@
 
 ## 单一版本安装
 
+需要先安装 [homebrew](https://brew.sh/index_zh-cn)
 - 安装 node `brew install node`
 - 更新 node `brew upgrade node`
 - 卸载 node `brew uninstall node`
@@ -14,8 +15,8 @@
 ## 多版本管理安装
 
 各种 node 版本管理工具：
-- n `npm i -g n` 安装最简单，推荐
-- nvm `brew install nvm` 安装后需要根据安装日志中的提示，手动进行配置，稍微麻烦点
+- [n](https://www.npmjs.com/package/n) `npm i -g n` 安装最简单，推荐
+- [nvm](https://github.com/nvm-sh/nvm) `brew install nvm` 安装后需要根据安装日志中的提示，手动进行配置，稍微麻烦点
 
 ## 查看当前环境的 node 版本和 npm 版本
 
