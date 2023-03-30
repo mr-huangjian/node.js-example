@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <title>Hello from Electron renderer!</title>
+
+    <link rel="stylesheet" href="./css/styles.css">
+  </head>
+  <body>
+    <h1>Hello from Electron renderer!</h1>
+    <p>👋 <button id="openDevToolsBtn" type="button">openDevTools</button></p>
+
+    <div>
+      <strong>应用键盘快捷键仅在应用程序被聚焦时触发</strong>
+      <p>Hit Alt+Shift+I on Windows, or Opt+Cmd+I on mac to see a message printed to the console.</p>
+    </div>
+
+    <div>
+      <strong>全局键盘快捷键，即使应用程序没有获得键盘焦点。</strong>
+      <p>Hit Alt+Ctrl+S on Windows or Opt+Cmd+S on Mac to see a message printed to the console.</p>
+    </div>
+
+    <div>
+      Title: <input id="title"/>
+      <button id="btn" type="button">Set</button>
+    </div>
+
+    <div>
+      <br> 
+      <button type="button" id="chooseFileBtn">Open a File</button>
+      File path: <strong id="filePath"></strong>
+    </div>
+
+    <div>
+      Current value: <strong id="counter">0</strong>
+    </div>
+
+    <div>
+      <p id="info">Info</p>
+    </div>
+
+    <div>
+      <p>Current theme source: <strong id="theme-source">System</strong></p>
+
+      <button id="toggle-dark-mode">Toggle Dark Mode</button>
+      <button id="reset-to-system">Reset to System Theme</button>
+    </div>
+
+    <div>
+      <h1>Web Bluetooth API</h1>
+      <button id="clickme">Test Bluetooth</button>
+      <p>Currently selected bluetooth device: <strong id="device-name""></strong></p>
+    </div>
+
+    <div>
+      <p>After launching this application, you should see the system notification.</p>
+      <strong id="output">Click it to see the effect in this interface.</strong>
+    </div>
+
+    <div>
+      <h1>Connection status: <strong id='status'></strong></h1>
+    </div>
+
+    
+    <script src="./js/renderer.js"></script>
+    <script src="./js/renderer-2.js"></script>
+
+  </body>
+</html>

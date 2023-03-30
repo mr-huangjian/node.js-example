@@ -10,3 +10,5 @@
 # 注意
 因为 Electron 将 Node.js 嵌入到其二进制文件中，你应用运行时的 Node.js 版本与你系统中运行的 Node.js 版本无关。
 
+
+[electron打包过程中的一些坑](https://blog.csdn.net/jingjingchen1014/article/details/121224421)
