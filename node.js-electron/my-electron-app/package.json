@@ -2,7 +2,7 @@
   "name": "my-electron-app",
   "version": "1.0.0",
   "description": "",
-  "main": "eg-02/app.js",
+  "main": "eg-04/app.js",
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
@@ -20,6 +20,7 @@
     "electron": "^23.1.4"
   },
   "dependencies": {
+    "@electron/remote": "^2.0.9",
     "electron-squirrel-startup": "^1.0.0",
     "yarn": "^1.22.19"
   }
