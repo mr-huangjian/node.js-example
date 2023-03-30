@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+
+        <!--
+            GET file:///...js net::ERR_FAILED  CORS 错误
+            安装 WebServer 解决：VSCode 安装扩展 Live Server
+        -->
+        <script type="module">
+            import mod from "./src/es6.script.js"
+            console.log('mod:', mod)
+            console.log('this:', this) // undefined
+        </script>
+
+        <script src="./src/html.script.js"></script>
+        <script>
+            say()
+        </script>
+
+    </head>
+    <body>
+        <button id="getBtn">GET</button>
+        <button id="postBtn">POST</button>
+
+        <script type="text/javascript">
+            $('#getBtn').click(() => {
+                $.ajax({
+                    url: 'http://127.0.0.1/api/book/list',
+                    type: 'GET',
+                    data: { name: '西游记' },
+                    success: (resp) => {
+                        console.log(resp)
+                    },
+                })
+            })
+        </script>
+    </body>
+</html>
