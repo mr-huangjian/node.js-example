@@ -1,20 +1,23 @@
+## 前情提要
 
-Mac 下如何安装多个 node.js 版本，并选择版本进行切换
+1. 以下为 macOS 系统下的安装
+2. node 包含 npm，只需安装 node
+3. 选择 node 的 stable 稳定版安装
+4. 推荐多版本管理安装
 
-# n
+## 单一版本安装
 
-```
-npm install -g n // 全局安装模块 n
-```
+- 安装 node `brew install node`
+- 更新 node `brew upgrade node`
+- 卸载 node `brew uninstall node`
 
-利用模块 n 安装并管理多个 node.js 版本
+## 多版本管理安装
 
-```
-n 0.10.22 // 安装node.js 0.10.22版本
-```
+各种 node 版本管理工具：
+- n `npm i -g n` 安装最简单，推荐
+- nvm `brew install nvm` 安装后需要根据安装日志中的提示，手动进行配置，稍微麻烦点
 
-安装完
+## 查看当前环境的 node 版本和 npm 版本
 
-```
-n // 上下键选择并回车切换到相应版本
-```
+- 查看当前环境的 node 版本 `node -v`
+- 查看当前环境的 npm 版本 `npm -v`
