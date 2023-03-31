@@ -1,3 +1,9 @@
+
+# 学习渠道
+1. [Electron官网](https://www.electronjs.org/zh/docs/latest/)
+2. [哔哩]()
+2. [51CTO]()
+
 # Electron 的特点
 
 - Electron 同时提供了丰富的工具集，可以让你和**桌面环境**整合起来。
