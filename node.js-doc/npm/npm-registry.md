@@ -8,9 +8,17 @@
 https://registry.npmjs.org/
 ```
 
+```
+% yarn config get registry
+https://registry.yarnpkg.com
+```
+
 设置
 ```
 % npm set registry https://registry.npmmirror.com/
+```
+```
+yarn config set registry https://registry.npmmirror.com/
 ```
 
 地址
@@ -22,6 +30,9 @@ cnpm ----------- https://r.cnpmjs.org/
 taobao --------- https://registry.npmmirror.com/
 npmMirror ------ https://skimdb.npmjs.com/registry/
 ```
+
+https://registry.npmmirror.com/ 是taobao的新地址，使用新地址无需重定向
+http://registry.npm.taobao.org/ 是taobao的老地址
 
 # NPM 镜像源管理
 
@@ -38,7 +49,7 @@ npmMirror ------ https://skimdb.npmjs.com/registry/
 % nrm ls # 获取镜像源列表，带*号的是当前镜像源
 % nrm current # 获取当前镜像源
 % nrm use {name} # 切换到{name}镜像源，比如 nrm use taobao
-% nrm add {name} {url} # 添加{name}镜像源，地址为{url}，比如 nrm add taobao http://registry.npm.taobao.org/
+% nrm add {name} {url} # 添加{name}镜像源，地址为{url}，比如 nrm add taobao https://registry.npmmirror.com/
 ...
 ```
 

@@ -11,6 +11,8 @@ document.querySelector('.main .openWindow').addEventListener('click', () => {
         frame: true,
         autoHideMenuBar: false,
     })
+
+    setTimeout(win.close, 5000)
     
     /**
      * Mac OS X和Windows差异比较大

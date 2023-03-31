@@ -82,3 +82,6 @@ typings/
 
 out/
 .DS_Store
+
+package.lock
+yarn.lock

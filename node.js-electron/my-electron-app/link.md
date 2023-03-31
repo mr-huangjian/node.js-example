@@ -6,6 +6,21 @@
 1. 官网
 2. 哔哩
 
+
+[Electron入门到精通（有可能是全站最好的electron课程）](https://www.bilibili.com/video/BV1xd4y1J7dB)
+
+```json
+{
+    "scripts": {
+        "start": "nodemon --watch main.js --exec npm run build",
+        "build": "electron ."
+    }
+}
+```
+
+
+--------
+
 - [基础!](https://blog.csdn.net/qq_38779317/article/details/126691165)
 - [remote被移除](https://www.electronjs.org/docs/latest/breaking-changes#planned-breaking-api-changes-140)
 - [remote重启](https://juejin.cn/post/7018561946345537566)
