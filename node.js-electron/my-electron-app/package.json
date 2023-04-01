@@ -2,7 +2,7 @@
   "name": "my-electron-app",
   "version": "1.0.0",
   "description": "",
-  "main": "eg-04/app.js",
+  "main": "eg-07/app.js",
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",

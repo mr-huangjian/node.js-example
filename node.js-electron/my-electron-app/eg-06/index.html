@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+  <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+  <title>进程通信</title>
+
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+  <div>
+    <input type="text" class="sendMsgToMainInput">
+    <button class="sendMsgToMainButton">(同步)发送消息到主进程</button>
+  </div>
+
+  <div>
+    <p>接收来自主进程的消息：</p>
+    <p class="recvMsgFromMain"></p>
+  </div>
+  
+
+  <script src="./js/renderer.js"></script>
+
+</body>
+
+</html>
