@@ -32,7 +32,7 @@ npmMirror ------ https://skimdb.npmjs.com/registry/
 ```
 
 https://registry.npmmirror.com/ 是taobao的新地址，使用新地址无需重定向
-http://registry.npm.taobao.org/ 是taobao的老地址
+http://registry.npm.taobao.org/ 是taobao的老地址，不推荐使用
 
 # NPM 镜像源管理
 

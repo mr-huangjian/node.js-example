@@ -7,12 +7,12 @@
 
 ## 单一版本安装
 
-需要先安装 [homebrew](https://brew.sh/index_zh-cn)
+需要先安装 [homebrew](https://brew.sh/index_zh-cn)，然后
 - 安装  `brew install node`
 - 更新  `brew upgrade node`
 - 卸载  `brew uninstall node`
 
-## 多版本管理安装
+## 多版本管理安装(强烈推荐！)
 
 各种 node 版本管理工具：
 - [n](https://www.npmjs.com/package/n) 安装最简单，推荐！
