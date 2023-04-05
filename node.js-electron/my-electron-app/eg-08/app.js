@@ -15,6 +15,10 @@ app.whenReady().then(() => {
         BrowserWindow.getFocusedWindow()?.webContents.reload()
     })
 
+    setTimeout(() => {
+        BrowserWindow.getFocusedWindow()?.webContents.send('redirect', 'https://cn.bing.com/')
+    }, 1000 * 5)
+
     mainWindow = create('index.html')
     remote.initialize()
     remote.enable(mainWindow.webContents)

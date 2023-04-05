@@ -1,5 +1,5 @@
 
-const { BrowserWindow } = require('@electron/remote')
+const { BrowserWindow, shell } = require('@electron/remote')
 const { ipcRenderer }= require('electron')
 const path = require('path')
 
@@ -15,4 +15,24 @@ document.querySelector('.sendMsgToMainButton').addEventListener('click', () => {
 
 document.querySelector('.newWin').addEventListener('click', () => {
     ipcRenderer.send('newWin')
+})
+
+document.querySelector('.newWin').addEventListener('click', () => {
+    ipcRenderer.send('newWin')
+})
+
+
+
+document.querySelector('#openURL').addEventListener('click', (ev) => {
+    ev.preventDefault()
+
+    const uri = ev.target.getAttribute('href')
+    console.log(uri)
+    shell.openExternal(uri)
+})
+
+document.querySelector('#showFinder').addEventListener('click', (ev) => {
+    const uri = path.resolve(__filename)
+    console.log(uri)
+    shell.showItemInFolder(uri)
 })
