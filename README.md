@@ -11,3 +11,6 @@
 - node.js-electron 作为桌面应用
 - node.js-pack 打包
 
+---
+
+项目单元测试的必要性！
