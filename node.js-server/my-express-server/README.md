@@ -28,3 +28,19 @@ movie[title] = 霸王别姬
     "movie[title]": "霸王别姬"
 }
 ```
+
+## mysql
+
+[mysql VS mysql2](https://blog.csdn.net/conquer_galaxy/article/details/129740614)
+
+
+mysql2
+```js
+const pool = mysql.createPool({})
+const db = pool.promise()
+
+try {
+	const [rows] = await db.query('sql')
+}
+```
+
